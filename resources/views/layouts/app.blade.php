@@ -10,6 +10,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
@@ -19,6 +23,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+
 </head>
 <body>
     <div id="app">
@@ -82,6 +87,8 @@
     </div>
 
     <!-- Scripts -->
+    <!-- bower:js -->
+    <!-- endbower -->   
     <script src="/js/app.js"></script>
 </body>
 </html>

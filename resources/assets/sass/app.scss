@@ -7,3 +7,87 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+body {
+	background: url('/images/bgdash.jpg');
+	background-size: cover;
+}
+
+.navbar-default {
+
+    background-color: rgba(86, 86, 173, 0.32);
+    border: none;
+
+    .navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+		color: #e2e2e2;
+    }
+
+    .navbar-nav 
+	
+		.open > a:focus {
+    		background-color: transparent !important;
+    		color: #e2e2e2;
+    	}
+
+    	.open > a {
+    		background-color: transparent !important;
+    		color: #e2e2e2;
+    	}
+
+	    .dropdown{
+				
+		    .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus {
+		    	color: #e2e2e2;
+	    	}
+	    }	
+}
+
+.panel-default {
+
+    margin-bottom: 22px;
+    background-color: rgba(23, 15, 47, 0.76);
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 3px rgba(191, 191, 191, 0.51);
+    
+    #new_post {
+    	background: rgba(146, 146, 158, 0.31);
+    	width: 100%;
+    	border: none;
+	}
+
+	.panel-heading {
+	    padding: 10px 15px;
+	    border: none;
+	    border-radius: 0px;
+	    color: #f2f2f2;
+	    font-size: 22px;
+	    background-color: transparent;
+	}
+
+	label {
+		color: #e2e2e2;
+		font-size: 16px;
+	}
+
+	.btn {
+		width: 100%;
+		background-color: transparent;
+		color: #e1e1e1;
+		border: none;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.btn:hover{
+		color: #f1f1f1;
+	}
+
+	.post-body {
+		font-size: 16px;
+		border-bottom: 0.3px solid rgba(115, 106, 106, 0.56);
+		padding: 10px 15px;
+		color: #e1e1e1;
+	}
+}

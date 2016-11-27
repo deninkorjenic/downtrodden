@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+
 
         <!-- Styles -->
         <style>
@@ -47,10 +49,11 @@
 
             .title {
                 font-size: 84px;
+                color: #f9f9f9;
             }
 
             .links > a {
-                color: #636b6f;
+                color: #e2e2e2;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -65,7 +68,8 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" style="background: url('{{ url('images/bg.jpg') }}')">
+
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -78,12 +82,8 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md animated fadeInUp">
                     Downtrodden
-                </div>
-
-                <div class="links">
-                    <em>Gejbova majka je kurva</em>
                 </div>
             </div>
         </div>
